@@ -5,12 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>クリクラ瀬戸 Q&A</title>
 <style>
-:root{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;color:#26343a;background:#f3f7f7}*{box-sizing:border-box}body{margin:0}.wrap{max-width:760px;margin:0 auto;padding:20px 14px 36px}.card{background:#fff;border:1px solid #d2e0e1;border-radius:16px;padding:20px 14px;box-shadow:0 4px 14px #1d414012}h1{font-size:25px;text-align:center;margin:4px 0 20px;color:#1b5558}details{border:1px solid #bdd2d3;border-radius:12px;margin:12px 0;background:#fff;overflow:hidden}summary{cursor:pointer;list-style:none;padding:16px 18px;font-size:17px;font-weight:800;color:#21565a;background:#edf7f5}summary::-webkit-details-marker{display:none}summary:after{content:"＋";float:right;font-size:21px;line-height:1}details[open] summary{border-bottom:1px solid #bdd2d3}details[open] summary:after{content:"−"}.answer{padding:17px 18px;font-size:15px;line-height:1.8}.answer p{margin:0 0 12px}.answer p:last-child{margin-bottom:0}.note{font-size:14px;line-height:1.75;background:#fff8e8;border-left:4px solid #e1a72c;padding:10px 12px;margin:12px 0}.answer ol{margin:8px 0 12px;padding-left:24px}.answer li{padding-left:3px;margin:3px 0}.contact{color:#bb2020;font-weight:700}</style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;color:#24363a;background:#f4f8f8}
+*{box-sizing:border-box}
+body{margin:0}
+.wrap{max-width:760px;margin:0 auto;padding:18px 14px 36px}
+.card{background:#fff;border:1px solid #d7e4e4;border-radius:18px;padding:22px 14px 16px;box-shadow:0 8px 24px rgba(30,70,73,.08)}
+h1{margin:0 0 6px;text-align:center;font-size:24px;letter-spacing:.04em;color:#1d5b5f}
+.lead{text-align:center;margin:0 0 20px;font-size:13px;color:#738589}
+.faq-item{border:1px solid #cfe0e0;border-radius:13px;margin:12px 0;overflow:hidden;background:#fff;animation:rise .45s ease both}
+.faq-item:nth-of-type(2){animation-delay:.08s}
+.faq-item:nth-of-type(3){animation-delay:.16s}
+.faq-question{width:100%;border:0;background:#f0f8f7;color:#24585b;display:flex;align-items:center;justify-content:space-between;gap:14px;text-align:left;padding:16px 17px;font:inherit;font-size:16px;font-weight:800;cursor:pointer;transition:background .25s ease,color .25s ease}
+.faq-question:hover,.faq-item.is-open .faq-question{background:#e4f2f0;color:#174c50}
+.faq-icon{flex:none;width:24px;height:24px;border:1px solid #79a9a5;border-radius:50%;display:grid;place-items:center;font-size:18px;font-weight:400;line-height:1;transition:transform .35s ease,background .25s ease,color .25s ease}
+.faq-item.is-open .faq-icon{transform:rotate(45deg);background:#2d7774;color:#fff;border-color:#2d7774}
+.faq-answer{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .4s ease,opacity .3s ease}
+.faq-item.is-open .faq-answer{grid-template-rows:1fr;opacity:1}
+.faq-answer-inner{min-height:0;overflow:hidden;padding:0 17px;font-size:15px;line-height:1.85}
+.faq-item.is-open .faq-answer-inner{padding-top:16px;padding-bottom:17px}
+.faq-answer p{margin:0 0 12px}.faq-answer p:last-child{margin-bottom:0}
+.note{font-size:14px;line-height:1.75;background:#fff8e8;border-left:4px solid #d99b28;border-radius:0 8px 8px 0;padding:10px 12px;margin:12px 0}
+.faq-answer ol{margin:8px 0 12px;padding-left:24px}.faq-answer li{padding-left:3px;margin:4px 0}.contact{color:#b22121;font-weight:700}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
 </head>
 <body>
-<main class="wrap"><section class="card"><h1>クリクラ瀬戸 Q&A</h1>
-<details><summary>お水が出にくい場合</summary><div class="answer"><p>ご迷惑をおかけして申し訳ございません。</p><p>下記の手順をお試しください。</p><div class="note">作業前に、ボトルの中に逆止弁（白いキャップのようなもの）が浮いていないか確認してください。<br>逆止弁が外れている場合は、お客様ご自身で作業せず、クリクラ瀬戸までご連絡ください。</div><ol><li>サーバーに取り付けてあるボトルを外します。</li><li>ボトルが刺さっていない状態で、冷水をコップ2〜3杯取水します。</li><li>その後、ボトルを再度取り付けます。</li></ol><p>上記の作業で改善されることがあります。<br>改善されない場合は、お手数ですが、もう一度クリクラ瀬戸までご連絡ください。</p></div></details>
-<details><summary>サーバーメンテナンス・不在時の交換について</summary><div class="answer"><p>サーバー交換の際にご不在の場合は、以下の準備をお願いいたします。</p><ol><li>ご使用中のボトルをサーバー本体から外します。<br><span class="contact">※ボトル内部に白いキャップのようなものが浮いている場合は、外す前にご連絡ください。</span></li><li>ボトルを外した状態で、冷水コックから水を出します。<br>※約2Lのお水が出ます。</li><li>ボトル差込口にホコリなどが入らないよう、袋やラップなどで覆います。</li><li>ボトルは交換後のサーバーで再度使用できますので、ご自宅で保管してください。</li><li>交換時に簡単な手順書をお届けしますので、手順に沿って設置してください。</li></ol><p>ご不明な点がございましたら、クリクラ瀬戸までお問い合わせください。</p></div></details>
-</section></main>
+<main class="wrap">
+<section class="card" aria-labelledby="page-title">
+<h1 id="page-title">クリクラ瀬戸 Q&A</h1>
+<p class="lead">よくあるご質問</p>
+<div class="faq-item">
+<button class="faq-question" type="button" aria-expanded="false"><span>お水が出にくい場合</span><span class="faq-icon" aria-hidden="true">＋</span></button>
+<div class="faq-answer"><div class="faq-answer-inner"><p>ご迷惑をおかけして申し訳ございません。</p><p>下記の手順をお試しください。</p><div class="note">作業前に、ボトルの中に逆止弁（白いキャップのようなもの）が浮いていないか確認してください。<br>逆止弁が外れている場合は、お客様ご自身で作業せず、クリクラ瀬戸までご連絡ください。</div><ol><li>サーバーに取り付けてあるボトルを外します。</li><li>ボトルが刺さっていない状態で、冷水をコップ2〜3杯取水します。</li><li>その後、ボトルを再度取り付けます。</li></ol><p>上記の作業で改善されることがあります。<br>改善されない場合は、お手数ですが、もう一度クリクラ瀬戸までご連絡ください。</p></div></div>
+</div>
+<div class="faq-item">
+<button class="faq-question" type="button" aria-expanded="false"><span>サーバーメンテナンス・不在時の交換について</span><span class="faq-icon" aria-hidden="true">＋</span></button>
+<div class="faq-answer"><div class="faq-answer-inner"><p>サーバー交換の際にご不在の場合は、以下の準備をお願いいたします。</p><ol><li>ご使用中のボトルをサーバー本体から外します。<br><span class="contact">※ボトル内部に白いキャップのようなものが浮いている場合は、外す前にご連絡ください。</span></li><li>ボトルを外した状態で、冷水コックから水を出します。<br>※約2Lのお水が出ます。</li><li>ボトル差込口にホコリなどが入らないよう、袋やラップなどで覆います。</li><li>ボトルは交換後のサーバーで再度使用できますので、ご自宅で保管してください。</li><li>交換時に簡単な手順書をお届けしますので、手順に沿って設置してください。</li></ol><p>ご不明な点がございましたら、クリクラ瀬戸までお問い合わせください。</p></div></div>
+</div>
+</section>
+</main>
+<script>
+document.querySelectorAll('.faq-question').forEach(function(button){button.addEventListener('click',function(){var item=button.parentElement;var isOpen=item.classList.toggle('is-open');button.setAttribute('aria-expanded',String(isOpen));});});
+</script>
 </body>
 </html>
